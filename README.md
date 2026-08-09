@@ -53,11 +53,11 @@ No manual intervention, anywhere in that chain.
 
 | Tool | What it does here |
 |---|---|
-|  **AWS Console** | The control room — where all these services live and get wired together. |
+|  **AWS Console** | The control room - where all these services live and get wired together. |
 |  **Pipeline-as-Code** | The whole build → deploy flow is written as code, not clicked together by hand. |
 |  **GitHub** | Source of truth for the app code and the infrastructure definitions. |
 |  **AWS CodePipeline** | Watches the repo and kicks off the automation the moment something changes. |
-|  **AWS CodeBuild** | Builds and validates the code — think "checking homework before it's submitted." |
+|  **AWS CodeBuild** | Builds and validates the code - think "checking homework before it's submitted." |
 |  **AWS CloudFormation** | Turns YAML into real, running AWS resources. No manual provisioning. |
 |  **Launch Template** | The blueprint for every EC2 instance the pipeline spins up. |
 |  **Auto Scaling Group** | Adds or removes servers automatically as traffic changes. |
@@ -423,7 +423,7 @@ No manual steps - the pipeline handles the entire path from commit to running se
 
 When the template changes, CloudFormation updates the Auto Scaling Group and replaces instances **gradually, one at a time**, so there's no downtime along the way.
 
-Here's the pipeline running end to end, straight from the console — Source, Build, and Deploy all green:
+Here's the pipeline running end to end, straight from the console - Source, Build, and Deploy all green:
 
 ![Final pipeline run — Source, Build, and Deploy all succeeded](images/18-final-setup.png)
 
